@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Home page</title>	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- favicon -->
+		<link rel="icon"  href="../images/favicon.ico">
+		<!-- css -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<!-- javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+		<style>
+			html, body, h1, h2, h3, h4, h5 {
+				font-family: "Raleway", sans-serif;
+			}
+			.w3-sidenav a, .w3-sidenav h4 {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body class="w3-teal w3-content" style="max-width:150000px">
+		<!-- Sidenav/menu -->
+		<nav class="w3-sidenav w3-collapse w3-black w3-ref w3-animate-left" style="z-index:3;width:250px;" id="mySidenav">
+			<br>
+			<div class="w3-container">
+				<a  onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding"> <i class="fa fa-remove"></i> </a>
+				<img src="https://lh3.googleusercontent.com/-_z7i-1RiqPU/AAAAAAAAAAI/AAAAAAAAAYk/hxX6MOk6Ct0/s120-p-no/photo.jpg" style="width:45%;" class="w3-round">
+				<h4 class="w3-padding-0"><b>GOXR3PLUS Studio</b></h4>			
+			</div>
+			<a href="https://about.me/goxr3plus_studio" class="w3-padding">WHO AM I ?</a>			
+			<a href="#portfolio" class="w3-padding w3-text-teal">SOFTWARE</a>
+			<a style="cursor:pointer;" onclick="document.getElementById('contactModal').style.display='block'" class="w3-padding">CONTACT</a>
+
+			<div class="w3-section w3-padding-top w3-large">
+				<a href="https://www.youtube.com/channel/UCj7qnP36Ye7gsiqvhA3eALw/featured" target="_blank" class="w3-hover-red w3-hover-text-light-white w3-show-inline-block" title="Visit Youtube Channel"><i class="fa fa-youtube-square"></i></a>
+				<a href="https://github.com/goxr3plus" target="_blank" class="w3-hover-cyan w3-hover-text-orange w3-show-inline-block" title="Visit GitHub"><i class="fa fa-github"></i></a>
+				<a href="http://stackoverflow.com/users/4970079/goxr3plus" target="_blank" class="w3-hover-white w3-hover-text-orange w3-show-inline-block" title="Visit StackOverFlow"><i class="fa fa-stack-overflow"></i></a>
+				<a href="https://www.patreon.com/user?u=4678411" target="_blank" class="w3-hover-white w3-hover-text-orange w3-show-inline-block" title="Visit Patreon"><i class="fa fa-product-hunt"></i></a>
+			</div>
+		</nav>
+
+		<!--Contact Modal Dialog -->
+		<div id="contactModal" class="w3-modal">
+			<div class="w3-modal-content w3-animate-bottom w3-card-8">
+				<header class="w3-container w3-teal">
+					<span onclick="document.getElementById('contactModal').style.display='none'"
+					class="w3-closebtn">&times;</span>
+					<h2>Contact </h2>
+				</header>
+				<div class="w3-container" style="color:black">
+					<p>
+						Drop me an email on <b> goxr3plus@gmail.com</b>
+					</p>
+					<p>
+						Drop me a comment on youtube channel
+					</p>
+				</div>
+				<footer class="w3-container w3-teal">
+					<p>
+						I will answer inside 24-hours
+					</p>
+					<button class="w3-btn w3-right w3-white w3-border"
+					onclick="document.getElementById('contactModal').style.display='none'">
+						Close
+					</button>
+				</footer>
+			</div>
+		</div>
+
+		<!-- Overlay effect when opening sidenav on small screens -->
+		<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+			..
+		</div>
+
+		<!-- !PAGE CONTENT! -->
+		<div class="w3-main" style="margin-left:260px">
+
+			<!-- Projects under development -->
+			<header class="w3-container">
+				<nav class="w3-dropnav w3-card-4" style="display:block" id="myDropnav">
+					<div class="w3-container">
+						<span onclick="w3_close()"></span>
+					</div>
+					<div style="text-align: center; ">
+						<h3 style="font-weight: bold; text-decoration:underline;"> Applications under Development</h3>
+					</div>
+					<div class="w3-row-padding w3-padding-bottom">
+						<div class="w3-third">
+							<h3>Music/Video/Chat</h3>
+							<a href="https://sourceforge.net/p/xr3player/" target="_blank">XR3Player</a>
+							<a href="https://sourceforge.net/p/xr3chat/" target="_blank">XR3Chat</a>
+						</div>
+						<div class="w3-third">
+							<h3>Games</h3>
+							<a href="https://sourceforge.net/p/xr3tictactoe/" target="_blank">XR3TicTacToe</a>
+							<a href="#">Village Mission</a>
+							<a href="#">Rabbit Vs Turtle</a>
+						</div>
+						<div class="w3-third">
+							<h3>Graphics</h3>
+							<a href="https://sourceforge.net/p/xr3imageviewer/" target="_blank">XR3ImageViewer</a>
+							<a href="https://sourceforge.net/p/xr3capture/" target="_blank">XR3Capture</a>
+						</div>
+						<div class="w3-third">
+							<h3>Food</h3>
+							<a href="https://sourceforge.net/p/xr3foodanalyser/" target="_blank">XR3FoodAnalyser</a>
+						</div>
+					</div>
+					<br>
+				</nav>
+			</header>
+
+			<!-- Navigation Bar Header -->
+			<header class="w3-container">
+				<a href="#"><img src="https://yt3.ggpht.com/-_z7i-1RiqPU/AAAAAAAAAAI/AAAAAAAAAAA/UA25Y1Gyv38/s100-c-k-no-mo-rj-c0xffffff/photo.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+				<span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+			</header>
+
+			<!-- PortFolio-->
+			<div id="portfolio" class="w3-container">
+
+				<iframe src="http://docs.google.com/gview?url=http://www.goxr3plus.co.nf/java8_tutorial.pdf&embedded=true"
+				style="width:100%; height:600px;" frameborder="0"></iframe>
+
+				<article>
+					<p>
+						If you appreciate my work you can donate a small amount of your effort -><a class="downloadLink" href="https://www.paypal.me/GOXR3PLUSCOMPANY">Paypal GoXR3Plus link :)</a>
+					</p>
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="L3987YCMD7VG2">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+					<section>
+						<div class="w3-example">
+							<div class="w3-yellow w3-code notranslate">
+								<p style="text-align: center; font-size: 150%">
+									<i>We are here to bring something unique in every project.</i>
+								</p>
+								<p style="text-align: center">
+									We are building unique opensource applications . Trying
+									<br>
+									to cover a lot of sections like
+									<b>(Audio,Graphics,Games,Tutorials)</b> you can check
+									<br>
+									our projects
+									and download them for free!!!!
+							</div>
+						</div>
+
+					</section>
+				</article>
+
+				<h1
+				style="background-color:black; border-radius: 100%; text-align: center; color: white"> General Applications >
+				></h1>
+
+				<!-- Tab Container 1-->
+				<div class="tabContainer">
+					<ul>
+						<li>
+							<a href="#XR3PlayerTab">
+							<div id="XR3PlayerIcon">
+								<img class="article-header-image" src="https://a.fsdn.com/allura/p/xr3player/icon" />
+								XR3Player
+							</div></a>
+						</li>
+						<li>
+							<a href="#XR3CaptureTab">
+							<div id="XR3CaptureIcon">
+								<img class="article-header-image" src="https://a.fsdn.com/allura/p/xr3capture/icon" alt="server not found" />
+								XR3Capture
+							</div></a>
+						</li>
+						<li>
+							<a href="#XR3FoodAnalyserTab">
+							<div id="XR3FoodAnalyserIcon">
+								<img class="article-header-image" src="https://a.fsdn.com/allura/p/xr3foodanalyser/icon" />
+								XR3FoodAnalyser
+							</div></a>
+						</li>
+					</ul>
+					<div id="XR3PlayerTab" >
+						<!--------------------------------------------------  XR3PLAYER ----------------------------------------->
+						<article>
+							<header class="article-header">
+								<a class="article-header-link" href="https://sourceforge.net/projects/xr3player/" target="_blank"> XR3Player(<b>Pre-Beta</b>)</a>
+								<a href="https://sourceforge.net/projects/xr3player/files/latest/download" rel="nofollow"><img alt="Download XR3Player" src="https://img.shields.io/sourceforge/dt/xr3player.svg"></a>
+							</header>
+							<section>
+								<div class="article-body">
+									<div>
+										<!-- Image || Video-->
+
+										<iframe style="float: inherit;" width="100%" height="400px"
+										src="https://www.youtube.com/embed/kL-LnVDInYg" allowfullscreen=""></iframe>
+
+										<div class="w3-example">
+											<div class="w3-code notranslate">
+												<h4>Description:</h4>
+												<p>
+													A new generation Media Player made in Java which contains all the features in one app.
+													<br>
+													Currently under development ,i will be glad if you contribute on github!
+												</p>
+												<h4>System Requirements:</h4>
+												<p>
+													Java 1.9.0++(Somewhere at 2017)
+												</p>
+												<p>
+													<b>Pre-Beta Access!</b>
+													<a class="downloadLink"
+													href="https://sourceforge.net/projects/xr3player/files/latest/download"
+													target="_blank"> Pre-Beta Download </a>
+												</p>
+											</div>
+										</div>
+
+									</div>
+									<a class="w3-btn w3-padding w3-orange w3-round-xlarge" onclick="document.getElementById('id01').style.display='block'"> Learn more...</a>
+
+									<!--XR3Player Modal Dialog -->
+									<div id="id01" class="w3-modal">
+										<div class="w3-modal-content w3-animate-top w3-card-8">
+											<header class="w3-container w3-teal">
+												<span onclick="document.getElementById('id01').style.display='none'"
+												class="w3-closebtn">&times;</span>
+												<h2>XR3Player Information</h2>
+											</header>
+											<div class="w3-container" >
+												<!--  The Story -->
+												<div>
+													<h3 style="font-weight:bold;" >Story</h3>
+													<hr>
+													<p>
+														I started developing this application for fun.I had only some months of coding experience
+														so this was a big challenge.The idea is to make a Video,Music,Radio player with extra DJTools
+														and many more...I try to keep the whole think sophisticated especially the UI,so the application
+														is easy to learn and use.
+														<br>
+														For weekly videos visit my <a class="downloadLink" href="https://www.youtube.com/channel/UCj7qnP36Ye7gsiqvhA3eALw" target="_blank"> Youtube </a> channel.
+													</p>
+												</div>
+												<hr>
+
+												<!--  Fore info -->
+												<fieldset>
+													<legend style="font-weight:bold;">
+														Application Features - Improvements(Started on (15/08/2014))
+													</legend>
+													<ul style="color:black;">
+														<b>*Version(3.0)</b>
+														<ul>
+															<li>
+																<p>
+																	->(15-12-2014)
+																</p>
+																<p style="color:orange;" >
+																	MPEG Layer III Audio(.mp3)(Fully Supported)
+																</p>
+															</li>
+															<li>
+																<p>
+																	->(22-10-2015)
+																</p>
+																<p style="color:orange;">
+																	<ol>
+																		<li>
+																			Now GUI(Graphical User Interface)
+																			has totally passed on javaFX. <a class="downloadLink" href="https://www.youtube.com/watch?v=AI6tUplQtPk" target="_blank"> See Here</a>
+																		</li>
+																		<li>
+																			Better Libraries Support
+																		</li>
+																	</ol>
+																</p>
+															</li>
+															<li>
+																<p>
+																	->(25-2-2016)
+																</p>
+																<p style="color:yellow">
+																	<ol>
+																		<li>
+																			Search on the fly
+																		</li>
+																		<li>
+																			Speech Recognizer using Shpinx(4)<a class="downloadLink" href="https://www.youtube.com/watch?v=c_7KLWfkNkY" target="_blank"> See Here</a>
+																		</li>
+																		<li>
+																			Text to Speech using MaryTTS
+																		</li>
+																		<li>
+																			Generally Improvements for High Speed
+																		</li>
+																	</ol>
+
+																</p>
+															</li>
+															<li>
+																<p>
+																	->(29-06-2016)
+																</p>
+																<p>
+																	<ol>
+																		<li>
+																			Redesigned the interface and more <a class="downloadLink" href="https://www.youtube.com/watch?v=J5LhhVlsQJg" target="_blank"> See Here</a>
+																		</li>
+																	</ol>
+
+																</p>
+															</li>
+															<li>
+																<h1> From now you can see the fresh updates on the youtube channel...</h1>
+															</li>
+														</ul>
+													</ul>
+												</fieldset>
+												<footer class="w3-container w3-teal">
+													<!-- New Ideas-->
+													<div>
+														<h3> New Ideas?</h3>
+														<p>
+															Have a look at Contact.
+														</p>
+														<button class="w3-btn w3-right w3-white w3-border"
+														onclick="document.getElementById('id01').style.display='none'">
+															Close
+														</button>
+													</div>
+												</footer>
+											</div>
+										</div>
+										<script>
+											doLines(2);
+										</script>
+									</div>
+							</section>
+						</article>
+					</div>
+					<div id="XR3CaptureTab" >
+						<!--------------------------------------------------  XR3CAPTURE ----------------------------------------->
+						<article>
+							<header class="article-header">
+								<a class="article-header-link" href="http://sourceforge.net/projects/xr3capture/" target="_blank"> XR3Capture(<b>Beta</b>)</a>
+								<a href="https://sourceforge.net/projects/xr3capture/files/latest/download" rel="nofollow"><img alt="Download XR3Capture" src="https://img.shields.io/sourceforge/dt/xr3capture.svg"></a>
+							</header>
+							<section>
+								<div class="article-body">
+									<div>
+
+										<iframe style="float: inherit;" width="100%" height="400px"
+										src="https://www.youtube.com/embed/s4TGWYBdv0E"  allowfullscreen="true"></iframe>
+
+										<div class="w3-example">
+											<div class="w3-code notranslate">
+												<h4>Description:</h4>
+												<p>
+													Capture your computer screen a lot easier with this app.
+												</p>
+												<h4>System Requirements:</h4>
+												<p>
+													Java 1.8.0_45++ required.
+												</p>
+											</div>
+										</div>
+
+									</div>
+									<a class="downloadLink"
+									href="http://sourceforge.net/projects/xr3capture/files/latest/download"
+									target="_blank"> Download </a>
+									<script>
+										doLines(2);
+									</script>
+								</div>
+							</section>
+						</article>
+					</div>
+					<div id="XR3FoodAnalyserTab">
+						<!--------------------------------------------------  XR3FOODANALYSER----------------------------------------->
+						<article>
+							<header class="article-header">
+								<a class="article-header-link" href="http://sourceforge.net/projects/xr3foodanalyser/" target="_blank"> XR3FoodAnalyser(<b>Alpha</b>) </a>
+								<a href="https://sourceforge.net/projects/xr3foodanalyser/files/latest/download" rel="nofollow"><img alt="Download XR3FoodAnalyser" src="https://img.shields.io/sourceforge/dt/xr3foodanalyser.svg"></a>
+							</header>
+							<section>
+								<div class="article-body">
+									<iframe style="float: inherit;" width="100%" height="400px"
+									src="https://www.youtube.com/embed/HxaFuBlDY0o"  allowfullscreen="true"></iframe>
+
+									<div class="w3-example">
+										<div class="w3-code notranslate">
+											<h4>Description:</h4>
+											<p>
+												Confirm that the food you eat is health with this app.Including over 5000 ingredients!!!
+											</p>
+											<h4>System Requirements:</h4>
+											<p>
+												Java 1.8.0_45++ required.
+											</p>
+										</div>
+									</div>
+
+									<a class="downloadLink"
+									href="https://sourceforge.net/projects/xr3foodanalyser/files/latest/download"
+									target="_blank"> Download </a>
+									<script>
+										doLines(2);
+									</script>
+								</div>
+							</section>
+						</article>
+					</div>
+				</div>
+
+				<hr>
+
+				<!-- GAMES SECTION --><!-- GAMES SECTION --><!-- GAMES SECTION --><!-- GAMES SECTION --><!-- GAMES SECTION -->
+
+				<h1
+				style="background-color:black;  border-radius: 100%; text-align: center; color: white"> ~~Games~~ >></h1>
+
+				<div class="tabContainer">
+					<ul>
+						<li>
+							<a href="#XR3TicTacToe">
+							<div id="XR3TicTacToeIcon">
+								<img class="article-header-image" src="https://a.fsdn.com/allura/p/xr3tictactoe/icon" />
+								XR3Tic-Tac-Toe
+							</div></a>
+						</li>
+						<li >
+							<a href="#VillageMission">
+							<div id="VillageMissionIcon">
+								Village-Mission
+							</div></a>
+						</li>
+					</ul>
+					<div id="XR3TicTacToe">
+						<!--------------------------------------------------  XR3-TIC-TAC-TOE----------------------------------------->
+						<article>
+							<header class="article-header">
+								<a class="article-header-link" href="https://sourceforge.net/projects/xr3tictactoe/" target="_blank"> XR3TICTACTOE(<b>Released</b>)</a>
+								<a href="https://sourceforge.net/projects/xr3tictactoe/files/latest/download" rel="nofollow"><img alt="Download XR3TicTacToe" src="https://img.shields.io/sourceforge/dt/xr3tictactoe.svg"></a>
+							</header>
+							<section>
+								<div class="article-body">
+									<!-- Image || Video-->
+									<iframe style="float: inherit;" width="100%" height="400px"
+									src="https://www.youtube.com/embed/ukOjpb0Divg"   allowfullscreen="true"></iframe>
+
+									<div class="w3-example">
+										<div class="w3-code notranslate">
+											<h4>Description:</h4>
+											<p>
+												A Tic Tac Toe game made in Java using Swing Library.
+											</p>
+											<h4>System Requirements:</h4>
+											<p>
+												Java 1.8.0_45++ required.
+											</p>
+										</div>
+									</div>
+
+									<a class="downloadLink"
+									href="https://sourceforge.net/projects/xr3tictactoe/files/latest/download"
+									target="_blank"> Download </a>
+									<script>
+										doLines(2);
+									</script>
+								</div>
+							</section>
+						</article>
+					</div>
+					<div id="VillageMission">
+						<!--------------------------------------------------  VillageMission----------------------------------------->
+						<article>
+							<header class="article-header">
+								<a class="article-header-link" target="_blank"> VillageMission(<b>Alpha</b>)</a>
+							</header>
+							<section>
+								<div class="article-body">
+									<!-- Image || Video-->
+									<iframe style="float: inherit;" width="100%" height="400px"
+									src="https://www.youtube.com/embed/k6XlbdYOURE"   allowfullscreen="true"></iframe>
+
+									<div class="w3-example">
+										<div class="w3-code notranslate">
+											<h4>Description:</h4>
+											<p>
+												A strategy game made in Java with Swing library.
+											</p>
+											<h4>System Requirements:</h4>
+											<p>
+												Java 1.8.0_45++ required.
+											</p>
+										</div>
+									</div>
+
+									<a class="downloadLink"> No Download Link </a>
+									<script>
+										doLines(2);
+									</script>
+								</div>
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+			<!-- End of PortFolio -->
+			<hr>
+
+			<!-- Footer -->
+			<footer class="w3-container w3-yellow">
+				<div>
+					<p>
+						© 2015-2017 GOXR3PLUS. All rights reserved.
+					</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

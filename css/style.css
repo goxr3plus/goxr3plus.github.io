@@ -1,0 +1,77 @@
+/*******************************************************************************
+
+ *                           Body                                              *
+
+ ******************************************************************************/
+body {
+	background-image: url("../images/background.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*******************************************************************************
+
+ *                           Links                                             *
+
+ ******************************************************************************/
+a.downloadLink {
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 0;
+	color: #333333;
+	background-color: #ffaa22;
+	border-radius: 12px;
+	border: none;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 16px;
+	text-decoration: none;
+}
+
+a:hover.downloadLink {
+	color: #9b2f2f;
+}
+
+/*******************************************************************************
+
+ *                           Tabs                                             *
+
+ ******************************************************************************/
+.ui-tabs-nav {
+	height: 50px; /*To stop nav block scaling of tab size*/
+}
+
+.tabContainer li a:active {
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
+	background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, red, yellow, green); /* Standard syntax */
+}
+
+/*******************************************************************************
+
+ *                           Articles                                             *
+
+ ******************************************************************************/
+.article-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.article-header-link {
+	color: black !important;
+	text-decoration: none;
+	font-size: 160%;
+	box-shadow: inset 0 0 10px green;
+}
+
+.article-header-link:hover {
+	box-shadow: inset 0 0 10px black;
+}
+
+.article-header-image {
+	background-color: white;
+	height: 24px;
+	width: 24px;
+	border-radius: 10px;
+}
