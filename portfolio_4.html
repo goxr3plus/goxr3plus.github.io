@@ -70,10 +70,10 @@
                                 </a>
                         </li>
                         <!-- END Menu Toggle -->
-                        <li class="active">
+                        <li>
                             <a href="index.html">Home</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="portfolio_4.html">Portfolio</a>
                         </li>
                         <li>
@@ -91,126 +91,83 @@
                 <!-- END Site Navigation -->
             </div>
         </header>
-        <!-- END Site Header -->
 
         <!-- Intro -->
-        <section class="site-section site-section-light site-section-top parallax-image" style="background-image: url('img/placeholders/parallax/photo1.jpg');">
+        <section class="site-section site-section-light site-section-top themed-background-dark">
             <div class="container">
-                <h1 class="text-center animation-slideDown hidden-xs"><strong>When imagination meets reality</strong></h1>
-            </div>
-
-            <div class="site-block text-center">
-                <a href="https://github.com/goxr3plus" class="btn btn-lg btn-success" target="_blank"><i class="fa fa-github" ></i> Find me on Github</a>
-                <a href="https://www.youtube.com/channel/UCj7qnP36Ye7gsiqvhA3eALw" class="btn btn-lg btn-danger" target="_blank"><i class="fa fa-youtube"></i> Find me on Youtube</a>
+                <h1 class="text-center animation-slideDown"><strong>Our Work</strong></h1>
+                <h2 class="h3 text-center animation-slideUp">Presenting some of our owesome projects below!</h2>
             </div>
         </section>
         <!-- END Intro -->
 
-        <!-- Promo #1 -->
-        <section class="site-content site-section site-slide-content">
+        <!-- Content -->
+        <section class="site-content site-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                        <img src="img/placeholders/screenshots/promo_desktop_left.png" alt="Promo #1" class="img-responsive">
-                    </div>
-                    <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                        <h3 class="h2 site-heading site-heading-promo"><strong>Tons of OpenSource Applications</strong></h3>
-                        <p class="promo-content">We create amazing desktop and web applications just because we love doing it.</p>
-                        <a href="portfolio_4.html">Check our portfolio..</a>
+                <!-- Portfolio Filter Links -->
+                <!-- Custom Portfolio functionality is initialized in js/pages/portfolio.js -->
+                <!-- Add the category value you want each link in .portfolio-filter to filter out in its data-category attribute. Add the value 'all' to show all items -->
+                <div class="site-block text-center">
+                    <div class="btn-group portfolio-filter">
+                        <a href="javascript:void(0)" class="btn btn-primary active" data-category="all">All</a>
+                        <a href="javascript:void(0)" class="btn btn-primary" data-category="audio">Audio</a>
+                        <a href="javascript:void(0)" class="btn btn-primary" data-category="games">Games</a>
+                        <a href="javascript:void(0)" class="btn btn-primary" data-category="design">Design</a>
+                        <a href="javascript:void(0)" class="btn btn-success" data-category="tutorials">Tutorials</a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- END Promo #1 -->
+                <!-- END Portfolio Filter Links -->
 
-        <!-- Quick Stats -->
-        <section class="site-content site-section parallax-image" style="background-image: url('img/placeholders/parallax/photo2.jpg');">
-            <div class="container">
-                <!-- Stats Row -->
-                <!-- CountTo (initialized in js/app.js), for more examples you can check out https://github.com/mhuggins/jquery-countTo -->
-                <div class="row" id="counters">
-                    <div class="col-sm-4">
-                        <div class="counter site-block">
-                            <span data-toggle="countTo" data-to="30" data-after="+"></span>
-                            <small>Projects</small>
-                        </div>
+                <!-- Portfolio Items -->
+                <!-- Add the category value for each item in its data-category attribute (for the filter functionality) -->
+                <div class="row portfolio">
+                    <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="audio">
+                        <a href="https://goxr3plus.github.io/xr3player.io/" target="_blank">
+                                <img src="img/placeholders/photos/xr3player.jpg" alt="Image" class="img-responsive">
+                                <span class="portfolio-item-info"><strong>XR3Player</strong></span>
+                            </a>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="counter site-block">
-                            <span data-toggle="countTo" data-to="320" data-after="+"></span>
-                            <small>Youtube Subscribers</small>
-                        </div>
+                    <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="games">
+                        <a href="https://github.com/goxr3plus/XR3TicTacToe" target="_blank">
+                                <img src="img/placeholders/photos/TicTacToe.jpg" alt="Image" class="img-responsive">
+                                <span class="portfolio-item-info"><strong>TicTacToe</strong></span>
+                            </a>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="counter site-block">
-                            <span data-toggle="countTo" data-to="1000000" data-after="+"></span>
-                            <small>Lines of code written</small>
-                        </div>
+                    <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+                        <a href="https://github.com/goxr3plus/Java-Google-Desktop-Translator" target="_blank">
+                                <img src="img/placeholders/photos/GoogleTranslator.jpg" alt="Image" class="img-responsive">
+                                <span class="portfolio-item-info"><strong>Google Translator</strong></span>
+                            </a>
+                    </div>
+                    <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+                        <a href="https://github.com/goxr3plus/JavaFX-Web-Browser" target="_blank">
+                                <img src="img/placeholders/photos/JavaFXWebBrowser.jpg" alt="Image" class="img-responsive">
+                                <span class="portfolio-item-info"><strong>JavaFX Web Browser</strong></span>
+                            </a>
+                    </div>
+                    <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+                        <a href="https://github.com/goxr3plus/OpenID-Connect-Java-Spring-Server/tree/NikosSevBranch" target="_blank">
+                                <img src="img/placeholders/photos/MitreIDConnect.jpg" alt="Image" class="img-responsive">
+                                <span class="portfolio-item-info"><strong>OpenID-Connect-Java-Spring-Server</strong></span>
+                            </a>
+                    </div>
+                    <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="design">
+                        <a href="https://goxr3plus.github.io/xr3player.io/" target="_blank">
+                                <img src="img/placeholders/photos/XR3Player.io.jpg" alt="Image" class="img-responsive">
+                                <span class="portfolio-item-info"><strong>XR3Player.io</strong></span>
+                            </a>
+                    </div>
+                    <div class="col-sm-3 portfolio-item animation-fadeInQuick" data-category="tutorials">
+                        <a href="#" target="_blank">
+                            <img src="img/placeholders/photos/coming.jpg" alt="Image" class="img-responsive">
+                                <span class="portfolio-item-info"><strong>More coming sonn..</strong></span>
+                            </a>
                     </div>
                 </div>
-                <!-- END Stats Row -->
+                <!-- END Portfolio Items -->
             </div>
         </section>
-        <!-- END Quick Stats -->
-
-        <!-- Promo #2 -->
-        <section class="site-content site-section site-slide-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-5 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                        <h3 class="h2 site-heading site-heading-promo"><strong>XR3Player</strong></h3>
-                        <p class="promo-content">A new modern , clean , responsive desktop application build by us.</p>
-                        <a href="https://goxr3plus.github.io/xr3player.io/" target="_blank">Learn More..</a>
-                    </div>
-                    <div class="col-sm-6 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                        <img src="https://user-images.githubusercontent.com/20374208/32140164-0d264f96-bc5f-11e7-8d52-7d29d71dec65.png" alt="Promo #2" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END Promo #2 -->
-
-        <!-- Testimonials -->
-        <section class="site-content site-section site-section-light parallax-image" style="background-image: url('img/placeholders/parallax/photo3.jpg');">
-            <div class="container">
-                <!-- Testimonials Carousel -->
-                <div id="testimonials-carousel" class="carousel slide carousel-html" data-ride="carousel" data-interval="4000">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                    </ol>
-                    <!-- END Indicators -->
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner text-center">
-                        <div class="active item">
-                            <p>
-                                <img src="img/placeholders/avatars/avatar.png" alt="Avatar" class="img-circle">
-                            </p>
-                            <blockquote class="no-symbol">
-                                <p>WoW i love your projects :)</p>
-                                <footer class="label label-default"><strong>Tobi</strong>, www.github.com</footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <p>
-                                <img src="img/placeholders/avatars/avatar.png" alt="Avatar" class="img-circle">
-                            </p>
-                            <blockquote class="no-symbol">
-                                <p>I like that you are helping us on your free time Alex!</p>
-                                <footer class="label label-default"><strong>David</strong>, www.github.com</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <!-- END Wrapper for slides -->
-                </div>
-                <!-- END Testimonials Carousel -->
-            </div>
-        </section>
-        <!-- END Testimonials -->
-
-
+        <!-- END Content -->
 
         <!-- Footer -->
         <footer class="site-footer site-section">
@@ -258,6 +215,15 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Load and execute javascript code used only in this page -->
+    <script src="js/pages/portfolio.js"></script>
+    <script>
+        $(function() {
+            Portfolio.init();
+        });
+
+    </script>
 </body>
 
 </html>
