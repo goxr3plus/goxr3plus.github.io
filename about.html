@@ -70,13 +70,13 @@
                                 </a>
                         </li>
                         <!-- END Menu Toggle -->
-                        <li class="active">
+                        <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="team.html">Team</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="about.html">Contact/About</a>
                         </li>
                         <li>
@@ -90,58 +90,99 @@
         </header>
         <!-- END Site Header -->
 
-        <!-- Intro -->
-        <section class="site-section site-section-light site-section-top parallax-image" style="background-image: url('img/placeholders/parallax/photo1.jpg');">
-            <div class="container">
-                <h1 class="text-center animation-slideDown hidden-xs"><strong>When imagination meets reality</strong></h1>
-            </div>
+        <!-- Media Container -->
+        <div class="media-container">
+            <!-- Intro -->
+            <section class="site-section site-section-light site-section-top">
+                <div class="container">
+                    <h1 class="text-center animation-slideDown"><i class="fa fa-building-o"></i> <strong>GOXR3PLUS STUDIO</strong></h1>
+                    <h2 class="h3 text-center animation-slideUp"><strong>Built with love by passionate people!</strong></h2>
+                </div>
+            </section>
+            <!-- END Intro -->
 
-            <div class="site-block text-center">
-                <a href="https://github.com/goxr3plus" class="btn btn-lg btn-success" target="_blank"><i class="fa fa-github" ></i> Find me on Github</a>
-                <a href="https://www.youtube.com/channel/UCj7qnP36Ye7gsiqvhA3eALw" class="btn btn-lg btn-danger" target="_blank"><i class="fa fa-youtube"></i> Find me on Youtube</a>
-            </div>
-        </section>
-        <!-- END Intro -->
+            <!-- Gmaps.js (initialized in js/pages/about.js), for more examples you can check out http://hpneo.github.io/gmaps/examples.html -->
+            <div id="gmap-top" class="media-map"></div>
+        </div>
+        <!-- END Media Container -->
 
-        <!-- Promo #1 -->
-        <section class="site-content site-section site-slide-content">
+        <!-- Company Info -->
+        <section class="site-content site-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                        <img src="img/placeholders/screenshots/promo_desktop_left.png" alt="Promo #1" class="img-responsive">
+                    <div class="col-sm-8">
+                        <div class="site-block">
+                            <h3 class="site-heading"><strong>When</strong> did all start?</h3>
+                            <p>Everything started in 2014 when i entered University . I wanted to create new awesome opensource projects just because i love it .</p>
+                        </div>
+                        <div class="site-block">
+                            <h3 class="site-heading"><strong>What</strong> will the future bring?</h3>
+                            <p>Besides opensource , i hope that one day GOXR3PLUS STUDIO will be known by thousands of people who will donate to improve it.</p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                        <h3 class="h2 site-heading site-heading-promo"><strong>Full OpenSource Applications</strong></h3>
-                        <p class="promo-content">I create amazing desktop and web applications just because i love doing it.</p>
-                        <a href="portfolio_4.html">Check my projects..</a>
+                    <div class="col-sm-4">
+                        <div class="site-block">
+                            <table class="table table-bordered table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Year</th>
+                                        <th class="text-center">Projects</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 50%;">2014</td>
+                                        <td><strong>2</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015</td>
+                                        <td><strong>10</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016</td>
+                                        <td><strong>17</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2014</td>
+                                        <td><strong>30</strong> &amp; Counting..</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="site-block">
+                            <blockquote>
+                                <p>I'm grateful we made it until now! Thank you all for supporting us!</p>
+                                <footer><strong>Alex Kentros</strong>, CEO</footer>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- END Promo #1 -->
+        <!-- END Company Info -->
 
         <!-- Quick Stats -->
-        <section class="site-content site-section parallax-image" style="background-image: url('img/placeholders/parallax/photo2.jpg');">
+        <section class="site-content site-section themed-background">
             <div class="container">
                 <!-- Stats Row -->
                 <!-- CountTo (initialized in js/app.js), for more examples you can check out https://github.com/mhuggins/jquery-countTo -->
                 <div class="row" id="counters">
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="counter site-block">
                             <span data-toggle="countTo" data-to="30" data-after="+"></span>
                             <small>Projects</small>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="counter site-block">
-                            <span data-toggle="countTo" data-to="320" data-after="+"></span>
-                            <small>Youtube Subscribers</small>
+                            <span data-toggle="countTo" data-to="1000" data-after="+"></span>
+                            <small>Happy Days</small>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="counter site-block">
-                            <span data-toggle="countTo" data-to="1000000" data-after="+"></span>
-                            <small>Lines of code written</small>
+                            <span data-toggle="countTo" data-to="0"></span>
+                            <small>Cups of Coffee</small>
                         </div>
                     </div>
                 </div>
@@ -149,64 +190,6 @@
             </div>
         </section>
         <!-- END Quick Stats -->
-
-        <!-- Promo #2 -->
-        <section class="site-content site-section site-slide-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-5 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                        <h3 class="h2 site-heading site-heading-promo"><strong>XR3Player</strong></h3>
-                        <p class="promo-content">A new modern , clean , responsive desktop application build by us.</p>
-                        <a href="https://goxr3plus.github.io/xr3player.io/" target="_blank">Learn More..</a>
-                    </div>
-                    <div class="col-sm-6 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear" data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                        <img src="https://user-images.githubusercontent.com/20374208/32140164-0d264f96-bc5f-11e7-8d52-7d29d71dec65.png" alt="Promo #2" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END Promo #2 -->
-
-        <!-- Testimonials -->
-        <section class="site-content site-section site-section-light parallax-image" style="background-image: url('img/placeholders/parallax/photo3.jpg');">
-            <div class="container">
-                <!-- Testimonials Carousel -->
-                <div id="testimonials-carousel" class="carousel slide carousel-html" data-ride="carousel" data-interval="4000">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                    </ol>
-                    <!-- END Indicators -->
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner text-center">
-                        <div class="active item">
-                            <p>
-                                <img src="img/placeholders/avatars/avatar.png" alt="Avatar" class="img-circle">
-                            </p>
-                            <blockquote class="no-symbol">
-                                <p>WoW i love your projects :)</p>
-                                <footer class="label label-default"><strong>Tobi</strong>, www.github.com</footer>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <p>
-                                <img src="img/placeholders/avatars/avatar.png" alt="Avatar" class="img-circle">
-                            </p>
-                            <blockquote class="no-symbol">
-                                <p>I like that you are helping us on your free time Alex!</p>
-                                <footer class="label label-default"><strong>David</strong>, www.github.com</footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <!-- END Wrapper for slides -->
-                </div>
-                <!-- END Testimonials Carousel -->
-            </div>
-        </section>
-        <!-- END Testimonials -->
-
 
 
         <!-- Footer -->
@@ -255,6 +238,19 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Google Maps API + Gmaps Plugin, must be loaded in the page you would like to use maps (Remove 'http:' if you have SSL) -->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="js/helpers/gmaps.min.js"></script>
+
+    <!-- Load and execute javascript code used only in this page -->
+    <script src="js/pages/about.js"></script>
+    <script>
+        $(function() {
+            About.init();
+        });
+
+    </script>
 </body>
 
 </html>
